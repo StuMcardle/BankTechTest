@@ -1,9 +1,10 @@
 require 'account'
+require 'statement'
 
 describe Account do
   
   it 'checks that default balance is zero' do
-    expect(subject.balance).to eq (0)
+    expect(subject.balance).to eq (Account::START_BALANCE)
   end
 
   it 'can deposit amount into account' do
