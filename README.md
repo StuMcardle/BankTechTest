@@ -35,3 +35,17 @@ So I can see my transaction history
 I would like to print my statement
 
 ```
+
+## How to install
+
+* Clone the repository
+* Run bundle install
+
+## How to run the code
+
+* Run RSPEC
+* Open IRB in your terminal and use each method individually
+**DEPOSIT**
+**WITHDRAW**
+**PRINT BAlANCE**
+**PRINT STATEMENT**
