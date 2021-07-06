@@ -12,7 +12,14 @@ class Account
   end
 
   def withdraw(amount)
+    raise "You cannot withdraw this amount as your balance is #{balance}" if exceeds_balance?(amount)
+
     @balance -= amount
   end
 
+  private
+
+  def exceeds_balance?(amount)
+    amount > @balance
+  end
 end
